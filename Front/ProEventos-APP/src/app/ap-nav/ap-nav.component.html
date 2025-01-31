@@ -1,0 +1,26 @@
+<nav class="navbar navbar-expand-lg" style="background-color: #1E63B6;">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#" style="color: white;">ProEventos</a>
+    <button
+      type="button"
+      class="navbar-toggler"
+      (click)="isCollapsed = !isCollapsed"
+      [attr.aria-expanded]="!isCollapsed"
+      aria-controls="navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav" [collapse]="isCollapsed">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#" style="color: white;">Eventos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" style="color: white;">Palestrantes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" style="color: white;">Contato</a>
+        </li>          
+      </ul>
+    </div>
+  </div>
+</nav>
